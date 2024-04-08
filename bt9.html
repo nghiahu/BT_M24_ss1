@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let users =  [
+            { 
+                id: 1, 
+                name: 'Alice', 
+                hobbies: ['Reading', 'Drawing'] }, 
+            { 
+                id: 2, 
+                name: 'Bob', 
+                hobbies: ['Gaming', 'Cooking'] },
+            ]
+            function hobbyArray(arr){
+                let result = [];
+                arr.forEach(item => {
+                    result.push(...item.hobbies);
+                });
+                return result;
+            }
+            console.log(hobbyArray(users))
+    </script>
+</body>
+</html>

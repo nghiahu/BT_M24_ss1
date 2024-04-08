@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let account = [
+        {
+            userName:"Nam",
+            password:"Nam21314"
+        },
+        {
+            userName:"Hoàng",
+            password:"Hoàng21314"
+        },
+        {
+            userName:"Tiến",
+            password:"Tiến 21314"
+        },
+        {
+            userName:"Phương",
+            password:"Phương21314"
+        },
+        ]
+        let result = account.find((item,index)=>{
+            return item.password.includes(" ");
+        })
+        if(result){
+            console.log("vị trí: " + account.indexOf(result))
+        }else{
+            console.log("mọi tài khoản hợp lệ")
+        }
+    </script>
+</body>
+</html>

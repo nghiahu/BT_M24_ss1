@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let books = [
+    {
+        id:11,
+        name:"Không Gia Đình"
+    },
+    {
+        id:12,
+        name:"Ông Già Và Biển Cả"
+    },
+    {
+        id:13,
+        name:"Âm Thanh Và Cuồng Nộ"
+    },
+    {
+        id:14,
+        name:"Thép Đã Tôi Thế Đấy"
+    },
+    {
+        id:15,
+        name:"Nhà Giả Kim"
+    },
+    {
+        id:16,
+        name:"Hai Số Phận"
+    },
+        ]
+
+        let result = books.find((book)=>{
+            if(book.id == 11){
+                return book
+            }else{
+                console.log("không tìm thấy")
+            } 
+        })
+        console.log(result)
+    </script>
+</body>
+</html>

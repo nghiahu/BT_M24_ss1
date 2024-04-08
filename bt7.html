@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function largestNumber(array,number){
+            let result = array.filter(item => item < number)
+            return Math.max(...result)
+        }
+        console.log(largestNumber([1,4,2,5,7,9],6));
+    </script>
+</body>
+</html>
